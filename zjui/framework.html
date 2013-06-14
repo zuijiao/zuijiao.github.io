@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<title>基础框架</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="public/css/bootstrap.css" rel="stylesheet">
+    <link href="public/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="public/css/docs.css" rel="stylesheet">
+    <link href="public/css/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src=".public/js/html5shiv.js"></script>
+    <![endif]-->
+	</head>
+
+	<body data-spy="scroll" data-target=".bs-docs-sidebar">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">zjui</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="./index.html">首页</a>
+              </li>
+              <li class="active">
+                <a href="./framework.html">基础框架</a>
+              </li>
+              <li class="">
+                <a href="./scaffolding.html">通用样式库</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">Base CSS</a>
+              </li>
+              
+            </ul>
+          </div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+
+	    <!-- Docs nav
+	    ================================================== -->
+	    <div class="row">
+	      <div class="span3 bs-docs-sidebar">
+		        <ul class="nav nav-list bs-docs-sidenav affix">
+		          <li class="active">
+		          	<a href="#base">
+		          		<i class="icon-chevron-right"></i> Base 重设
+		          	</a>
+		          </li>
+		          <li>
+		          	<a href="#gridSystem">
+		          		<i class="icon-chevron-right"></i> 
+		          		网格布局
+		          	</a>
+		          </li>
+		          <li>
+		          	<a href="#fluidGridSystem">
+		          		<i class="icon-chevron-right"></i> 
+		          		流动网格布局
+		          	</a>
+		          </li>
+		          
+	        	</ul>
+      		</div>
+		      <div class="span9" style="height:1000px;">
+		      	<!-- Base 重设 -->
+		      	<section id="base">
+			        <div class="page-header">
+			          <h2>Base 重设</h2>
+			        </div>
+
+			        <p>zj.base.css是嘴角的浏览器重设样式。借鉴了bootstrap.css和aliceui的base.css。</p>
+
+			        <div class="page-header">
+			        	<h3>字体</h3>
+			      	</div>
+			      	<p>zj.base 采用了 12 像素，1.5 的行高，并且兼容 Mac 和 Window 的字体配置，非常适合国内的网站样式。</p>
+			        <pre class="prettyprint">
+body,button,input,select,textarea {
+    font:12px/1.5 tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;
+}</pre>
+							<div class="page-header">
+								<h3>常用基础功能class(类)</h3>
+							</div>
+							<div class="prettyprint">
+								<ul>
+									<li>
+										<code>.fn-clearfix</code>
+										清除浮动
+									</li>
+									<li>
+										<code>.fn-pull-left .fn-pull-right</code>
+										左右浮动
+									</li>
+									<li>
+										<code>.fn-text-overflow</code>
+										文字单行溢出后省略号
+										<p> 文字很长很长...</p>
+									</li>
+									<li>
+										<code>.fn-rmb</code>
+										金额样式 ￥999.9
+									</li>
+									<li>
+										<code>.fn-webkit-adjust</code>
+										 用于修复 webkit 下不能显示小于 10px 的中文字体
+									</li>
+								</ul>
+							</div>
+			      </section>
+		      	<!-- Grid system
+        ================================================== -->
+        <section id="gridSystem">
+          <div class="page-header">
+            <h1>Default grid system</h1>
+          </div>
+
+          <h2>Live grid example</h2>
+          <p>The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without <a href="./scaffolding.html#responsive">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+          <div class="bs-docs-grid">
+            <div class="row show-grid">
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+              <div class="span1">1</div>
+            </div>
+            <div class="row show-grid">
+              <div class="span2">2</div>
+              <div class="span3">3</div>
+              <div class="span4">4</div>
+            </div>
+            <div class="row show-grid">
+              <div class="span4">4</div>
+              <div class="span5">5</div>
+            </div>
+            <div class="row show-grid">
+              <div class="span9">9</div>
+            </div>
+          </div>
+
+          <h3>Basic grid HTML</h3>
+          <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
+<pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span8"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <p>Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.</p>
+
+          <h2>Offsetting columns</h2>
+          <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns.</p>
+          <div class="bs-docs-grid">
+            <div class="row show-grid">
+              <div class="span4">4</div>
+              <div class="span3 offset2">3 offset 2</div>
+            </div><!-- /row -->
+            <div class="row show-grid">
+              <div class="span3 offset1">3 offset 1</div>
+              <div class="span3 offset2">3 offset 2</div>
+            </div><!-- /row -->
+            <div class="row show-grid">
+              <div class="span6 offset3">6 offset 3</div>
+            </div><!-- /row -->
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="span4"&gt;...&lt;/div&gt;
+  &lt;div class="span3 offset2"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <h2>Nesting columns</h2>
+          <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
+          <div class="row show-grid">
+            <div class="span9">
+              Level 1 column
+              <div class="row show-grid">
+                <div class="span6">
+                  Level 2
+                </div>
+                <div class="span3">
+                  Level 2
+                </div>
+              </div>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="span9"&gt;
+    Level 1 column
+    &lt;div class="row"&gt;
+      &lt;div class="span6"&gt;Level 2&lt;/div&gt;
+      &lt;div class="span3"&gt;Level 2&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        </section>
+
+
+        <!-- 流动网格布局 -->
+		      	 <section id="fluidGridSystem">
+			          <div class="page-header">
+			            <h1>Default grid system</h1>
+			          </div>
+
+			          <h2>Live grid example</h2>
+			          <p>The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without <a href="./scaffolding.html#responsive">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+			          <div class="bs-docs-grid">
+			            <div class="row show-grid">
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			              <div class="span1">1</div>
+			            </div>
+			            <div class="row show-grid">
+			              <div class="span2">2</div>
+			              <div class="span3">3</div>
+			              <div class="span4">4</div>
+			            </div>
+			            <div class="row show-grid">
+			              <div class="span4">4</div>
+			              <div class="span5">5</div>
+			            </div>
+			            <div class="row show-grid">
+			              <div class="span9">9</div>
+			            </div>
+			          </div>
+			        </section>
+		      </div>
+      	</div>
+      </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script src="./public/js/bootstrap.js"></script>
+      <script src="./public/js/prettify.js"></script>
+      <script src="./public/js/holder.js"></script>
+      <script src="./public/js/app.js"></script>
+	</body>
+
+</html>
