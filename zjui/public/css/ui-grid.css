@@ -1,0 +1,253 @@
+/* zj 网格布局样式模块 
+ * 总宽度990px;
+ * 每个网格span为30px;
+ * 间距为10px
+ * 流式布局单位采用%
+ */
+.ui-container {
+  margin-right: auto;
+  margin-left: auto;
+  *zoom: 1;
+}
+
+.ui-container,
+.ui-navbar-static-top .ui-container,
+.ui-navbar-fixed-top .ui-container,
+.ui-navbar-fixed-bottom .ui-container {
+  width: 990px;
+}
+
+.ui-container:before,
+.ui-container:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  height: 0;
+}
+
+.ui-container:after {
+  clear: both;
+}
+
+.ui-container-fluid {
+  padding-right: 10px;
+  padding-left: 10px;
+  *zoom: 1;
+}
+
+.ui-container-fluid:before,
+.ui-container-fluid:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  height: 0;
+}
+
+.ui-container-fluid:after {
+  clear: both;
+}
+
+.span1 {width:30px;}
+.span2 {width:70px;}
+.span3 {width:110px;}
+.span4 {width:150px;} /*  */
+.span5 {width:190px;} /* 左侧边栏的宽度 */
+.span6 {width:230px;}
+.span7 {width:270px;}
+.span8 {width:310px;}
+.span9 {width:350px;}
+.span10 {width:390px;}
+.span11 {width:430px;}
+.span12 {width:470px;}
+.span13 {width:510px;}
+.span14 {width:550px;}
+.span15 {width:590px;} /* 中央区域宽度 */
+.span16 {width:630px;}
+.span17 {width:670px;}
+.span18 {width:710px;}
+.span19 {width:750px;}
+.span20 {width:790px;}
+.span21 {width:830px;} /*  */
+.span22 {width:870px;}
+.span23 {width:910px;}
+.span24 {width:950px;}
+.span25 {width:990px;} /* 最大页面宽度 */
+
+.row {
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  height: 0;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row [class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 10px;
+}
+
+.row-fluid {
+  width: 100%;
+  *zoom: 1;
+}
+
+.row-fluid:before,
+.row-fluid:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  height: 0;
+}
+
+.row-fluid:after {
+  clear: both;
+}
+
+.row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  margin-left: 1.010101010101010101%;
+  *margin-left: 1.010101010101010101%;
+  -webkit-span-sizing: border-span;
+     -moz-span-sizing: border-span;
+          span-sizing: border-span;
+}
+
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+
+.row-fluid .span25 {
+  width: 100%;
+  *width: 99.94680851063829%;
+}
+
+.row-fluid .span24 {
+  width: 95.95959595959595%;
+  *width: 95.95959595959595%;
+}
+
+.row-fluid .span23 {
+  width: 91.9191919191919191%;
+  *width: 91.9191919191919191%;
+}
+
+.row-fluid .span22 {
+  width: 87.8787878787878787%;
+  *width: 87.8787878787878787%;
+}
+
+.row-fluid .span21 {
+  width: 83.8383838383838383%;
+  *width: 83.8383838383838383%;
+}
+
+.row-fluid .span20 {
+  width: 79.7979797979797979%;
+  *width: 79.7979797979797979%;
+}
+
+.row-fluid .span19 {
+  width: 75.7575757575757575%;
+  *width: 75.7575757575757575%;
+}
+
+.row-fluid .span18 {
+  width: 71.7171717171717171%;
+  *width: 71.7171717171717171%;
+}
+
+.row-fluid .span17 {
+  width: 67.6767676767676767%;
+  *width: 67.6767676767676767%;
+}
+
+.row-fluid .span16 {
+  width: 63.6363636363636363%;
+  *width: 63.6363636363636363%;
+}
+
+.row-fluid .span15 {
+  width: 59.5959595959595959%;
+  *width: 59.5959595959595959%;
+}
+
+.row-fluid .span14 {
+  width: 55.5555555555555555%;
+  *width: 55.5555555555555555%;
+}
+.row-fluid .span13 {
+  width: 51.5151515151515151%;
+  *width: 51.5151515151515151%;
+}
+.row-fluid .span12 {
+  width: 47.4747474747474747%;
+  *width: 47.4747474747474747%;
+}
+.row-fluid .span11 {
+  width: 43.4343434343434343%;
+  *width: 43.4343434343434343%;
+}
+.row-fluid .span10 {
+  width: 39.3939393939393939%;
+  *width: 39.3939393939393939%;
+}
+.row-fluid .span9 {
+  width: 35.3535353535353535%;
+  *width: 35.3535353535353535%;
+}
+.row-fluid .span8 {
+  width: 31.3131313131313131%;
+  *width: 31.3131313131313131%;
+}
+.row-fluid .span7 {
+  width: 27.2727272727272727%;
+  *width: 27.2727272727272727%;
+}
+.row-fluid .span6 {
+  width: 23.2323232323232323%;
+  *width: 23.2323232323232323%;
+}
+.row-fluid .span5 {
+  width: 19.1919191919191919%;
+  *width: 19.1919191919191919%;
+}
+.row-fluid .span4 {
+  width: 15.1515151515151515%;
+  *width: 15.1515151515151515%;
+}
+.row-fluid .span3 {
+  width: 11.1111111111111111%;
+  *width: 11.1111111111111111%;
+}
+.row-fluid .span2 {
+  width: 7.0707070707070707%;
+  *width: 7.0707070707070707%;
+}
+.row-fluid .span1 {
+  width: 3.0303030303030303%;
+  *width: 3.0303030303030303%;
+}
+
+[class*="span"].hide,
+.row-fluid [class*="span"].hide {
+  display: none;
+}
+
+
+

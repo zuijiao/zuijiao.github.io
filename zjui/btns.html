@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./public/css/zj.base.css">
+		<link style="text/css" rel="stylesheet" href="./public/css/ui-btn.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/ui-nav.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/ui-components.css">
+		<!-- <link rel="stylesheet" type="text/css" href="./public/css/ui-icon.css"> -->
+		<link rel="stylesheet" type="text/css" href="./public/css/ui-grid.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/ui-form.css">
+		<!-- <link rel="stylesheet" type="text/css" href="./public/css/lib/bootstrap.min.css"> -->
+		<link rel="stylesheet" type="text/css" href="./public/css/ui-icon.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/lib/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/timepicker/bootstrap-timepicker.min.css">
+
+		<style>
+			.row {
+				border: 1px solid red;
+			}
+		</style>
+		</head>
+	</head>
+
+	<body>
+		<button class="ui-btn ui-btn-primary ui-btn-large">
+			111
+		</button>
+		<button class="ui-btn ui-btn-info">
+			111
+		</button>
+		<button class="ui-btn ui-btn-warning">
+			111
+		</button>
+		<button class="ui-btn ui-btn-danger ui-btn-small">
+			111
+		</button>
+		<button class="ui-btn ui-btn-inverse">
+			111
+		</button>
+		<button class="ui-btn ui-btn-success ui-btn-mini">
+			111
+		</button>
+
+		<div class="ui-btn-group">
+			<button class="ui-btn">
+				Left
+			</button>
+			<button class="ui-btn">
+				Middle
+			</button>
+			<button class="ui-btn">
+				Right
+			</button>
+		</div>
+
+		<div class="ui-btn-group ui-btn-group-vertical">
+			<button class="ui-btn">
+				1
+			</button>
+			<button class="ui-btn">
+				2
+			</button>
+			<button class="ui-btn">
+				3
+			</button>
+		</div>
+
+		<div class="ui-btn-group">
+			<a class="ui-btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+				下拉菜单
+				<span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="javascript:void(0)">
+						第一个
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						第二个
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						第三个
+					</a>
+				</li>
+				<li class="divider">
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						其他链接
+					</a>
+				</li>
+			</ul>
+		</div>
+		<br/>
+		<br/>
+		
+			<ul class="ui-nav ui-nav-tabs fn-clearfix" style="margin:0 0 10px 25px;">
+				<li class="active">
+					<a href="javascript:void(0)">首页</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">简介</a>
+				</li>
+				<li class="active">
+					<a href="javascript:void(0)">设置</a>
+				</li>
+			</ul>
+		
+		<br/>
+		<br/>
+
+		<div class="ui-navbar">
+			<div class="ui-navbar-inner">
+				<div class="container">
+					<a class="ui-btn ui-btn-navbar" data-target="ui-navbar-responsive-collapse" data-toggle="collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="javascript:void(0);">
+						Logo
+					</a>
+					<div class="ui-nav-collapse collapse ui-navbar-responsive-collapse" style="height:0;">
+						<ul class="nav">
+							<li class="active">	
+								<a href="javascript:void(0);">开始</a>
+							</li>
+							<li class="">	
+								<a href="javascript:void(0);">简介</a>
+							</li>
+							<li class="dropdown">	
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">设置
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>	
+										<a href="javascript:void(0);">第一个</a>
+									</li>
+									<li >	
+										<a href="javascript:void(0);">第二个2222</a>
+									</li>
+									<li>	
+										<a href="javascript:void(0);">第三个</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+
+						<form class="ui-navbar-search fn-pull-left" action="">
+							<input type="text" class="search-query" placeholder="搜索">
+						</form>
+						<ul class="nav fn-pull-right">
+							<li>
+								<a href="javascript:void(0);">退出</a>
+							</li>
+							<li class="active">
+								<a href="javascript:void(0);">登录</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br/>
+		<br/>
+
+		<div class="ui-navbar ui-navbar-inverse">
+			<div class="ui-navbar-inner">
+				<div class="container">
+					<a class="ui-btn ui-btn-navbar" data-target="ui-navbar-responsive-collapse" data-toggle="collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="javascript:void(0);">
+						Logo
+					</a>
+					<div class="ui-nav-collapse collapse ui-navbar-responsive-collapse" style="height:0;">
+						<ul class="nav">
+							<li class="active">	
+								<a href="javascript:void(0);">开始</a>
+							</li>
+							<li class="">	
+								<a href="javascript:void(0);">简介</a>
+							</li>
+							
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
+									设置 
+									<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li>	
+										<a href="javascript:void(0);">第一个</a>
+									</li>
+									<li>	
+										<a href="javascript:void(0);">第二个</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="ui-navbar-search fn-pull-left" action="">
+							<input type="text" class="search-query" placeholder="搜索">
+						</form>
+						<ul class="nav fn-pull-right">
+							<li>
+								<a href="javascript:void(0);">退出</a>
+							</li>
+							<li class="active">
+								<a href="javascript:void(0);">登录</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<br/>
+	<br/>
+	<ul class="breadcrumb">
+		<li>
+			<a href="javascript:void(0);">主页</a>
+			<span class="divider">
+				<i class="ui-icon-chevron-right"></i>
+			</span>
+		</li>
+		<li>
+			<a href="javascript:void(0);">开始</a>
+			<span class="divider">
+				<i class="ui-icon-chevron-right"></i>
+			</span>
+		</li>
+	</ul>
+
+	<div class="ui-container">
+		<div class="row">
+			<div class="span14" style="height:100px;background:#000;"></div>
+			<div class="span3" style="height:30px;background:#ddd"></div>
+		</div>
+		<br/>
+
+		<div class="row">
+			<div class="span14" style="height:100px;background:#000;"></div>
+			<div class="span3" style="height:30px;background:#ddd"></div>
+		</div>
+		<br/>
+		<div class="row-fluid">
+			<div class="span14" style="height:100px;background:#000;"></div>
+			<div class="span8" style="height:30px;background:#ddd"></div>
+		</div>
+	</div>
+	<br/>
+
+	<div class="ui-container-fluid">
+		<div class="row-fluid">
+			<div class="span14" style="height:100px;background:#000;"></div>
+			<div class="span8" style="height:30px;background:#ddd"></div>
+		</div>
+	</div>
+
+	<br/>
+	<form class="ui-form-horizontal ui-form" onsubmit="return false;">
+		<h4 class="ui-form-header">文字输入框</h4>
+		<div class="ui-form-content">
+
+			<div class="control-group">
+				<label class="control-label" for="input-mini">Mini</label>
+				<div class="controls">
+					<input type="text" id="input-mini" class="input-mini">
+					<span class="help-inline">
+						<code>.input-mini</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-small">Small</label>
+				<div class="controls">
+					<input type="text" id="input-small" class="input-small">
+					<span class="help-inline">
+						<code>.input-small</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-medium">Medium</label>
+				<div class="controls">
+					<input type="text" id="input-medium" class="input-medium">
+					<span class="help-inline">
+						<code>.input-medium</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-large">Large</label>
+				<div class="controls">
+					<input type="text" id="input-large" class="input-large">
+					<span class="help-inline">
+						<code>.input-large</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-xlarge">Xlarge</label>
+				<div class="controls">
+					<input type="text" id="input-xlarge" class="input-xlarge">
+					<span class="help-inline">
+						<code>.input-xlarge</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-mini">Disabled</label>
+				<div class="controls">
+					<input type="text" id="uneditable" class="input-xlarge input-uneiditable" disabled>
+					<span class="help-inline">
+						<code>.input-uneditable</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-mini">Inline</label>
+				<div class="controls">
+					<input type="text" id="inline" class="input-medium" placeholder="写点什么呢。。。">
+					<input type="text" class="input-small">
+					<span class="help-block">
+						Placeholder 如果需要在IE中有效，需要点js
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-mini">Prepend content</label>
+				<div class="controls">
+					<div class="input-prepend">
+						<span class="add-on">@</span>
+						<input type="text" class="input-small" placeholder="username">
+					</div>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-mini">Prepend content</label>
+				<div class="controls">
+					<div class="input-prepend">
+						<button class="ui-btn">
+							Search
+						</button>
+						<input type="text" class="input-small" placeholder="username">
+					</div>
+					<span class="help-inline">
+							<code>button prepend</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-mini">Prepend content</label>
+				<div class="controls">
+					<div class="input-prepend">
+						<div class="ui-btn-group">
+							<button class="ui-btn dropdown-toggle" data-toggle="dropdown">Action
+								<span class="caret"></span>
+							</button>
+
+							<ul class="dropdown-menu">
+								<li>
+									<a href="javascript:void(0);">第一个</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">第二个</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">第三个</a>
+								</li>
+							</ul>
+							
+						</div>
+						<input type="text" class="input-large" placeholder="username">
+					</div>
+					<span class="help-inline">
+							<code>button dropdown-menu</code>
+					</span>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="input-mini">Append content</label>
+				<div class="controls">
+					<div class="input-append">
+						<div class="ui-btn-group">
+							<input type="text" class="input-large" placeholder="username">
+							<button class="ui-btn">Search</button>
+						</div>
+					</div>
+					<span class="help-inline">
+							<code>button dropdown-menu</code>
+					</span>
+				</div>
+			</div>
+
+	</form>
+	
+	<div class="input-append bootstrap-timepicker">
+    <input id="timepicker1" type="text" class="input-small">
+      <span class="add-on"><i class="icon-time"></i></span>
+  </div>
+ 
+        
+  <br/>
+  <i class="icon-desktop"></i>
+  <a href="www.twitter.com" style="width:20px;height:20px;">111</a>
+	<script src="./public/js/lib/jquery.min.js"></script>
+	<script src="./public/js/lib/bootstrap.js"></script>
+	<script src="./public/js/timepicker/bootstrap-timepicker.min.js"></script>
+	<script type="text/javascript">
+    $('#timepicker1').timepicker();
+  </script>
+	</body>
+</html>
